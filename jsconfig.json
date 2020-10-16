@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": [
+        "./*"
+      ],
+      "@clients/*": [
+        "./src/clients/*"
+      ],
+      "@contexts/*": [
+        "src/contexts/*"
+      ],
+      "@contextProviders/*": [
+        "./src/contextProviders/*"
+      ],
+      "@reducers/*": [
+        "./src/reducers/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@consts/*": [
+        "./src/consts/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ]
+    }
+  }
+}
