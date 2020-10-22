@@ -38,6 +38,7 @@ const Copyright = () => (
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100vh',
+    background: theme.palette.grey['50'],
   },
   drawerPaper: {
     width: 240,
@@ -47,6 +48,10 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+  },
+  logoContainer: {
+    height: 80,
+    flexShrink: 0,
   },
   appBarSpacer: theme.mixins.toolbar,
   content: {
@@ -61,8 +66,8 @@ const AppLayout = ({ children, title }) => {
 
   return (
     <Grid container direction="column" className={classes.root}>
-      <AppBar className={classes.appBar}>
-        <Toolbar>
+      <AppBar color="white" className={classes.appBar} elevation="6">
+        <Toolbar className={classes.toolbar}>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             {title}
           </Typography>
@@ -82,11 +87,11 @@ const AppLayout = ({ children, title }) => {
             paper: classes.drawerPaper,
           }}
         >
+          <Box className={classes.logoContainer} px={4} display="flex" alignItems="center" justifyContent="center">
+            <Typography component="span" variant="h6">MVP Template</Typography>
+          </Box>
+          <Divider />
           <List>
-            <Box px={4} py={2}>
-              <Typography component="span" variant="h6">Logo</Typography>
-            </Box>
-            <Divider />
             <ListItem button>
               <ListItemIcon>
                 <DashboardIcon />

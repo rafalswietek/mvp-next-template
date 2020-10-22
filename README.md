@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <h3 align="center">Hold Seats Web Application</h3>
+  <h3 align="center">MVP Next.js Web Application Template</h3>
 </div>
 
 ## Table of Contents
